@@ -1,5 +1,5 @@
 * {
-
+    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(0, 0, 0);
 }
 
@@ -24,22 +24,30 @@ main {
     margin-left: 25%;
     margin-bottom: 0%;
 }
-body{
+
+body {
     margin: 0;
 }
-main h1{
+
+main h1 {
     font-size: 500%;
     color: #B5B5B5;
 }
+
 main h2 {
     font-size: 300%;
     color: #505050;
 }
+main h3 {
+    font-size: 200%;
+    color: #ffffff;
+}
+
 .text {
     margin-left: 2%;
 }
 
-.side-bar{
+.side-bar {
     margin: 0;
 }
 
@@ -53,103 +61,129 @@ main h2 {
     background-color: #9F1212;
     color: aliceblue;
 }
-.side-bar-content li{
+
+.side-bar-content li {
     background-color: #9F1212;
     margin-top: 10%;
 }
 
-.side-bar-content a{
-    font-family: Arial, Helvetica, sans-serif;
+.side-bar-content a {
     text-decoration: none;
     outline: none;
     color: #DEDEDE;
     font-size: 1vmin;
     background-color: #9F1212;
-}@media screen and (min-width:500px) {
-    .side-bar-content a{
+}
+
+@media screen and (min-width:500px) {
+    .side-bar-content a {
         font-size: 2vmin;
     }
 
-}@media screen and (min-width:1500px) {
-    .side-bar-content a{
+}
+
+@media screen and (min-width:1500px) {
+    .side-bar-content a {
         font-size: 3vmin;
     }
 }
 
-.side-bar-content img{
+.side-bar-content img {
     background-color: #9F1212;
-    height:30px;
+    height: 30px;
     margin-bottom: 30px;
     display: block;
-}@media screen and (min-width:500px) {
-    .side-bar-content img{
-        height:50px;
+}
+
+@media screen and (min-width:500px) {
+    .side-bar-content img {
+        height: 50px;
     }
 
-}@media screen and (min-width:700px) {
-    .side-bar-content img{
-        height:80px;
+}
+
+@media screen and (min-width:700px) {
+    .side-bar-content img {
+        height: 80px;
     }
 
-}@media screen and (min-width:900px) {
-    .side-bar-content img{
-        height:100px;
+}
+
+@media screen and (min-width:900px) {
+    .side-bar-content img {
+        height: 100px;
     }
 
-}@media screen and (min-width:1200px) {
-    .side-bar-content img{
-        height:130px;
-    }
-}@media screen and (min-width:1500px) {
-    .side-bar-content img{
-        height:150px;
+}
+
+@media screen and (min-width:1200px) {
+    .side-bar-content img {
+        height: 130px;
     }
 }
 
-.rightbar::after{
+@media screen and (min-width:1500px) {
+    .side-bar-content img {
+        height: 150px;
+    }
+}
+
+.rightbar::after {
     content: "";
-      /*描画位置*/
+    /*描画位置*/
     position: absolute;
     top: 0;
     margin-left: 71%;
-      /*線の形状*/
+    /*線の形状*/
     width: 1%;
     height: 80%;
     background: #440303;
-      /*線の動き1.4秒かけて動く。永遠にループ*/
+    /*線の動き1.4秒かけて動く。永遠にループ*/
     animation: pathmove 3s ease-in-out infinite;
-    opacity:0;
+    opacity: 0;
 }
-@keyframes pathmove{
-    0%{
-      height:0;
-      top:0;
-      opacity: 0;
+
+@keyframes pathmove {
+    0% {
+        height: 0;
+        top: 0;
+        opacity: 0;
     }
-    30%{
-      height:60%;
-      opacity: 1;
+
+    30% {
+        height: 60%;
+        opacity: 1;
     }
-    100%{
-      height:0;
-      top:90%;
-      opacity: 0;
+
+    100% {
+        height: 0;
+        top: 90%;
+        opacity: 0;
     }
 }
 
 
-.profile img{
+.profile img {
     margin: auto;
     display: block;
 }
 
-.top-content{
+.profile-content{
+    margin: 10%;
+}
+.profile-content a{
+    font-size: 10%;
+}
+
+.top-content {
     margin-top: 15%;
 }
-.top-content h1{
+
+.top-content h1 {
     font-size: 8vmin;
     color: #B5B5B5;
 }
+
 .top-content h2 {
     font-size: 5vmin;
     color: #505050;
@@ -159,49 +193,56 @@ main h2 {
 
 .timeline {
     list-style: none;
-  }
-  .timeline > li {
+}
+
+.timeline>li {
     margin-bottom: 60px;
-  }
-  
-  /* for Desktop */
-  @media ( min-width : 640px ){
-    .timeline > li {
-      overflow: hidden;
-      margin: 0;
-      position: relative;
-    }
-    .timeline-date {
-      width: 110px;
-      float: left;
-      margin-top: 20px;
-    }
-    .timeline-content {
-      width: 75%;
-      float: left;
-      border-left: 3px #e5e5d1 solid;
-      padding-left: 30px;
-    }
-    .timeline-content:before {
-      content: '';
-      width: 12px;
-      height: 12px;
-      background: #6fc173;
-      position: absolute;
-      left: 106px;
-      top: 24px;
-      border-radius: 100%;
+}
+
+/* for Desktop */
+@media (min-width : 640px) {
+    .timeline>li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
     }
 
-    .history h3, p {
+    .timeline-date {
+        width: 110px;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .timeline-content {
+        width: 75%;
+        float: left;
+        border-left: 3px #e5e5d1 solid;
+        padding-left: 30px;
+    }
+
+    .timeline-content:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #6fc173;
+        position: absolute;
+        left: 106px;
+        top: 24px;
+        border-radius: 100%;
+    }
+
+    .history h3,
+    p {
         color: #ffffff;
     }
 
-
-    .timeline-content img{
+    .history h3{
+        font-size: 130%;
+    }
+    .timeline-content img {
         height: 50px;
     }
-  }
+}
 
 
 /*========= LoadingのためのCSS ===============*/
@@ -209,23 +250,23 @@ main h2 {
 /* Loading背景画面設定　*/
 #splash {
     /*fixedで全面に固定*/
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	z-index: 999;
-	text-align:center;
-	color:#fff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    text-align: center;
+    color: #fff;
 }
 
 /* Loading画像中央配置　*/
 #splash_text {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     z-index: 999;
-	transform: translate(-50%, -50%);
-	color: #fff;
-	width: 100%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 100%;
 }
 
 
@@ -237,6 +278,7 @@ main h2 {
     transition: all .2s cubic-bezier(.04, .435, .315, .9);
     transform: scaleY(1);
 }
+
 /*上の画面*/
 .loader_cover-up {
     transform-origin: center top;
@@ -248,7 +290,43 @@ main h2 {
     bottom: 0;
     transform-origin: center bottom;
 }
+
 /*クラス名がついたらY軸方向に0*/
 .coveranime {
     transform: scaleY(0);
 }
+
+.skill-table {
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #ffffff;
+}
+
+
+.skill-table th {
+    padding: 10px;
+    border-bottom: solid 4px #778ca3;
+    color: #778ca3
+}
+
+.skill-table td {
+    padding: 10px;
+    border-bottom: solid 1px #778ca3;
+}
+
+.slider img {
+    width:80%;/*スライダー内の画像を横幅100%に*/
+    height:80%;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider .slick-slide {
+    margin:0;/*スライド左右の余白調整*/
+}
+
+.slider svg{
+    width: 80%;
+}
+

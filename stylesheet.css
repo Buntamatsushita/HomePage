@@ -22,7 +22,7 @@ main {
     margin: 0;
     padding-top: 15px;
     margin-left: 25%;
-    margin-bottom: 20%;
+    margin-bottom: 0%;
 }
 body{
     margin: 0;
@@ -43,6 +43,8 @@ main h2 {
     margin: 0;
 }
 
+
+
 .side-bar-content {
     list-style: none;
     padding: 0;
@@ -55,29 +57,72 @@ main h2 {
     background-color: #9F1212;
     margin-top: 10%;
 }
+
 .side-bar-content a{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 130%;
     text-decoration: none;
     outline: none;
     color: #DEDEDE;
-
+    font-size: 1vmin;
     background-color: #9F1212;
+}@media screen and (min-width:500px) {
+    .side-bar-content a{
+        font-size: 2vmin;
+    }
+
+}@media screen and (min-width:1500px) {
+    .side-bar-content a{
+        font-size: 3vmin;
+    }
 }
+
+.side-bar-content img{
+    background-color: #9F1212;
+    height:30px;
+    margin-bottom: 30px;
+    display: block;
+}@media screen and (min-width:500px) {
+    .side-bar-content img{
+        height:50px;
+    }
+
+}@media screen and (min-width:700px) {
+    .side-bar-content img{
+        height:80px;
+    }
+
+}@media screen and (min-width:900px) {
+    .side-bar-content img{
+        height:100px;
+    }
+
+}@media screen and (min-width:1200px) {
+    .side-bar-content img{
+        height:130px;
+    }
+}@media screen and (min-width:1500px) {
+    .side-bar-content img{
+        height:150px;
+    }
+}
+
 
 .profile img{
     margin: auto;
     display: block;
 }
 
-
+.top-content{
+    margin-top: 15%;
+}
 .top-content h1{
-    font-size: 900%;
+    font-size: 8vmin;
     color: #B5B5B5;
 }
 .top-content h2 {
-    font-size: 400%;
+    font-size: 5vmin;
     color: #505050;
+    margin: 0;
 }
 
 

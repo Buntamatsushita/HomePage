@@ -16,6 +16,15 @@ header {
     box-sizing: border-box;
     background-color: #9F1212;
     box-sizing: border-box;
+    z-index: 1;
+}
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    flex-direction: column;
 }
 
 main {
@@ -23,11 +32,9 @@ main {
     padding-top: 15px;
     margin-left: 25%;
     margin-bottom: 0%;
+    height: auto;
 }
 
-body {
-    margin: 0;
-}
 
 main h1 {
     font-size: 500%;
@@ -190,7 +197,6 @@ main h3 {
     margin: 0;
 }
 
-
 .timeline {
     list-style: none;
 }
@@ -315,7 +321,25 @@ main h3 {
     padding: 10px;
     border-bottom: solid 1px #778ca3;
 }
+.certification-table {
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #ffffff;
+}
 
+
+.certification-table th {
+    padding: 10px;
+    border-bottom: solid 4px #778ca3;
+    color: #778ca3
+}
+
+.certification-table td {
+    padding: 10px;
+    border-bottom: solid 1px #778ca3;
+}
 .slider img {
     width:80%;/*スライダー内の画像を横幅100%に*/
     height:80%;
@@ -328,5 +352,39 @@ main h3 {
 
 .slider svg{
     width: 80%;
+}
+
+.contact-img img{
+    height: 100px;
+    margin: 50px;
+}
+.mail{
+    margin-top: 20vmin;
+    margin: 10vmin;
+}
+.mail a{
+    width: auto;
+    text-decoration: none;
+    outline: none;
+    color: #B5B5B5;
+    font-size: 3vmin;
+    text-align: center;
+}
+.contact-twitter{
+    padding: 3vmin;
+}
+footer{
+    text-align: center;
+    width: 100%;
+    position: relative;
+    padding-bottom: 3px;
+}
+.copy-right p{
+    color: #ffffff;
+    font-size: 2vmin;
+}
+.footer-top{
+    position: absolute ;
+    bottom: 0;
 }
 

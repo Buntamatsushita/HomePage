@@ -152,10 +152,6 @@ main h2 {
 	width: 100%;
 }
 
-/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
-#splash_text svg{
-    height: 2px;
-}
 
 /*割れる画面のアニメーション*/
 .loader_cover {

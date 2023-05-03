@@ -389,3 +389,40 @@ footer{
     bottom: 0;
 }
 
+.product img{
+    height: 30vmin;
+}
+.product p{
+    margin-right: 10%;
+}
+.product a{
+    width: auto;
+    text-decoration: none;
+    outline: none;
+    color: #77f364;
+    font-size: 2vmin;
+    text-align: center;
+}
+.product-table {
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #ffffff;
+}
+
+
+.product-table th {
+    min-width: 10vmin;
+    padding: 10px;
+    border-bottom: solid 4px #778ca3;
+    color: #778ca3
+}
+
+.product-table td {
+    padding: 10px;
+    border-bottom: solid 1px #778ca3;
+}
+.td-second{
+    text-align: left;
+}

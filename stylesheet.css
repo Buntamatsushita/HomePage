@@ -392,6 +392,45 @@ footer{
     bottom: 0;
 }
 
+
+.td-second{
+    text-align: left;
+}
+
+.name h2{
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.name h3{
+    margin: 1%;
+    color: #878787;
+}
+.univercity{
+    margin-right: 50%;
+    margin-top: 5%;
+}
+
+.univercity p{
+    font-size: 2vmin;
+}
+
+.certification{
+    margin-top: 5%;
+}
+
+.service{
+    margin-top: 5%;
+}
+
+.timeline h2{
+    margin-top: 10%;
+}
+
+
+/* --------- product -------------*/
+.product{
+    margin-bottom: 5%;
+}
 .product img{
     height: 30vmin;
 }
@@ -431,6 +470,7 @@ footer{
     padding: 10px;
     border-bottom: solid 1px #778ca3;
 }
-.td-second{
-    text-align: left;
+
+.signage{
+    margin-top: 5%;
 }

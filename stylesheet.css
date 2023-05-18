@@ -463,7 +463,8 @@ footer{
 
 
 .product-table th {
-    min-width: 10vmin;
+    min-width: 12vmin;
+    font-size: 120%;
     padding: 10px;
     border-bottom: solid 4px #778ca3;
     color: #778ca3

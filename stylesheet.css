@@ -210,6 +210,9 @@ main h3 {
     color: hsl(204, 100%, 50%);
 }
 /* for Desktop */
+.history{
+    margin-bottom: 10%;
+}
 @media (min-width : 640px) {
     .timeline>li {
         overflow: hidden;
@@ -451,7 +454,7 @@ footer{
     color: hsl(204, 100%, 50%);
 }
 .product-table {
-    width: 90%;
+    width: 95%;
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;

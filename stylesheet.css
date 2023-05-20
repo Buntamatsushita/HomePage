@@ -430,31 +430,31 @@ footer{
 }
 
 
-/* --------- product -------------*/
-.product{
+/* --------- portfolio -------------*/
+.portfolio{
     margin-bottom: 5%;
 }
-.product img{
+.portfolio img{
     height: 30vmin;
 }
-.product p{
+.portfolio p{
     margin-right: 10%;
 }
-.product a{
+.portfolio a{
     width: auto;
     text-decoration: none;
     outline: none;
     font-size: 2vmin;
     text-align: center;
 }
-.product-download{
+.portfolio-download{
     color: #77f364;
 }
-.product-link{
+.portfolio-link{
     color: hsl(204, 100%, 50%);
 }
-.product-table {
-    width: 95%;
+.portfolio-table {
+    width: 90%;
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
@@ -462,7 +462,7 @@ footer{
 }
 
 
-.product-table th {
+.portfolio-table th {
     min-width: 12vmin;
     font-size: 120%;
     padding: 10px;
@@ -470,11 +470,16 @@ footer{
     color: #778ca3
 }
 
-.product-table td {
+.portfolio-table td {
     padding: 10px;
     border-bottom: solid 1px #778ca3;
 }
 
 .signage{
     margin-top: 5%;
+}
+.portfolio img{
+    width: 80%;
+    height: auto;
+
 }

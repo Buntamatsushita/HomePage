@@ -483,3 +483,8 @@ footer{
     height: auto;
 
 }
+
+.portfolio video{
+    width: 80%;
+    height: auto;
+}

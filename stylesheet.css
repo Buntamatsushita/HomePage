@@ -489,3 +489,9 @@ footer{
     width: 80%;
     height: auto;
 }
+
+/* hello */
+.hello img{
+    width: 40vmin;
+    height: auto;
+}

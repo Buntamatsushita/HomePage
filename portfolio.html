@@ -1,826 +1,998 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta lang="ja" />
 
-<head>
-    <meta charset="utf-8">
-    <meta lang="ja">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-    <meta name="author" content="Buntako">
-    <meta name="description" content="Welcome to Buntako's page.">
+    <meta name="author" content="Buntako" />
+    <meta name="description" content="Welcome to Buntako's page." />
 
     <title>buntako | Home</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="js/processing.js"></script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3J1VQVC8G"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-B3J1VQVC8G"
+    ></script>
+    <script
+      src="https://deno.land/x/embed_pdf@v1.3.0/mod.js"
+      type="module"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'G-B3J1VQVC8G');
+      gtag("config", "G-B3J1VQVC8G");
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="side-bar">
-            <ul class="side-bar-content">
-                <li>
-                    <a href="index.html"><img src="src/icon.png"></a>
-                </li>
-                <li>
-                    <a href="hello.html">HELLO</a>
-                </li>
-                <li>
-                    <a href="about-me.html">ABOUT ME</a>
-                </li>
-                <li>
-                    <a href="portfolio.html">PORTFOLIO</a>
-                </li>
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
-            </ul>
-
-
-
-        </div>
-
+      <div class="side-bar">
+        <ul class="side-bar-content">
+          <li>
+            <a href="index.html"><img src="src/icon.png" /></a>
+          </li>
+          <li>
+            <a href="hello.html">HELLO</a>
+          </li>
+          <li>
+            <a href="about-me.html">ABOUT ME</a>
+          </li>
+          <li>
+            <a href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
-        <h1>| Portfolio</h1>
+      <h1>| Portfolio</h1>
 
-        <div class="portfolio">
+      <div class="portfolio">
+        <div class="tomotomo">
+          <h2>- tomotomo</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">北海道Society5.0 未来創造ワークショップ</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2024/2 - 2024/5</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">HTML / CSS / TypeScript</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">
+                firebase / vite / Elements Plus / vue.js / Cloud run /
+                SkyWay(webRTC)
+              </td>
+            </tr>
+            <tr>
+              <td>使用ツール</td>
+              <td class="td-second">GitHub / Google Cloud Platform / figma</td>
+            </tr>
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">高齢女性・特にアクティブシニア</td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">チーム開発（4名　うち２名非エンジニア）</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                高齢者の孤独感を解消するためのコミュニケーションアプリを開発した。特に、アプリのクリーンさ（高齢女性のみ、詐欺師が入れない）を重視し、シンプルなデザインにした。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">
+                高齢女性の誰かと話したいという気持ちを解決する
+              </td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                MVPは達成できたが、実際に使ってもらうことがなかなか難しくフィードバックを少ししかもらえなかった。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                通知機能がないこと。軽微なバグが残っていること。
+              </td>
+            </tr>
+            <tr>
+              <td>システム構成</td>
+              <td><img src="src/tomotomo/system.png" alt="" /></td>
+            </tr>
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <div class="tomotomo-pdf">
+                  <embed-pdf src="src/tomotomo/manual.pdf"></embed-pdf>
+                  <embed-pdf src="src/tomotomo/presentation.pdf"></embed-pdf>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-download"
+                  href="https://tomotomo-4ordhwcuhq-an.a.run.app"
+                >
+                  tomotomo
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
 
-            <div class="homepage">
-                <h2>- Home Page</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            個人開発
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2023/4 -
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            HTML / CSS / JavaScript
-                        </td>
-                    </tr>
-                    <!-- <tr>
+        <div class="KABERECO">
+          <h2>- KABERECO</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">高度ICT演習 fun-i-con</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2023/4 - 2024/2</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">HTML / CSS / JavaScript / Python</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">FaskAPI / Docker</td>
+            </tr>
+            <tr>
+              <td>使用ツール</td>
+              <td class="td-second">GitHub / Google Colab / GCE</td>
+            </tr>
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">
+                KABEYAさんのお客様（壁紙を探している方）
+              </td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">チーム開発（8名）</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                札幌で輸入壁紙を専門に扱う「KABEYA」さんのお客様にぴったりの壁紙を推薦するためのシステムを開発した。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">お客様にぴったりの壁紙を推薦する</td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                精度向上を見込めるが、１年間の課外活動にしては、とても完成度の高いものができた。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                購買データを取得することができなかったため、レコメンドシステムとしてはまだ弱いこと。
+              </td>
+            </tr>
+            <tr>
+              <td>システム構成</td>
+              <td><img src="src/KABERECO/system.jpg" alt="" /></td>
+            </tr>
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/KABERECO/image.png" alt="" />
+
+                <iframe
+                  src="https://drive.google.com/file/d/1Kp-ztBm8Jxdpwm2hoX0Gt4XgFZhrmat8/preview"
+                  width="640"
+                  height="480"
+                  allow="autoplay"
+                ></iframe>
+              </td>
+            </tr>
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a class="portfolio-download" href="http://34.146.161.72/">
+                  KABERECO
+                </a>
+                <p>
+                  <a
+                    href="https://www.hmcc.jp/2024/02/22/%E5%8C%97%E6%B5%B7%E9%81%93%E5%AD%A6%E7%94%9F%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%882024%E7%B5%90%E6%9E%9C%E7%99%BA%E8%A1%A8/#:~:text=%E3%80%90%E5%8C%97%E6%B5%B7%E9%81%93%E7%B5%8C%E6%B8%88%E7%94%A3%E6%A5%AD%E5%B1%80%E9%95%B7%E8%B3%9E%E3%80%91%C2%A0%0A%E3%80%80%E3%81%AF%E3%81%93%E3%81%A0%E3%81%A6%E6%9C%AA%E6%9D%A5%E5%A4%A7%E5%AD%A6%C2%A0%0A%E3%80%80%E3%83%81%E3%83%BC%E3%83%A0%E5%90%8D%EF%BC%9AFUN%2Di%2DCon%C2%A0%0A%E3%80%80%E3%82%A2%E3%83%97%E3%83%AA%E5%90%8D%EF%BC%9AKABERECO%C2%A0"
+                    >2024 北海道アプリコンテスト結果発表｜hmcc</a
+                  >
+                </p>
+                <p>
+                  <a href="https://www.hokkaido-np.co.jp/article/998863/"
+                    >北海道新聞</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://prtimes.jp/main/html/rd/p/000000008.000103661.html"
+                    >協力企業様　プレスリリース</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="homepage">
+          <h2>- Home Page</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2023/4 -</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">HTML / CSS / JavaScript</td>
+            </tr>
+            <!-- <tr>
                         <td>使用技術</td>
                         <td class="td-second">
 
                         </td>
                     </tr> -->
-                    <!-- <tr>
+            <!-- <tr>
                         <td>使用ツール</td>
                         <td class="td-second">
 
                         </td>
                     </tr> -->
-                    <!-- <tr>
+            <!-- <tr>
                         <td>想定ユーザ</td>
                         <td class="td-second">
-                            
                         </td>
                     </tr> -->
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            個人開発
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-                            ポートフォリオを載せるためのホームページを作成した。また、HTML / CSS / JavaScriptを使って開発を行ったことがなかったので作成した。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-                            ポートフォリオを載せるためのホームページを作成する。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            作成途中だが、設計等をせずに作っているので、行き当たりばったりになっている。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            別のデザインで作ってみたい。
-                        </td>
-                    </tr>
-                    <!-- <tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                ポートフォリオを載せるためのホームページを作成した。また、HTML /
+                CSS / JavaScriptを使って開発を行ったことがなかったので作成した。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">
+                ポートフォリオを載せるためのホームページを作成する。
+              </td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                作成途中だが、設計等をせずに作っているので、行き当たりばったりになっている。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">別のデザインで作ってみたい。</td>
+            </tr>
+            <!-- <tr>
                         <td>システム構成</td>
                         <td><img src="src/line-bot/system.jpg" alt=""></td>
                     </tr> -->
-                    <!-- <tr>
+            <!-- <tr>
                         <td>参考資料</td>
                         <td>
                             
                         </td>
                     <tr> -->
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/Buntamatsushita/HomePage">
-                                Git Hub | Home Page
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/Buntamatsushita/HomePage"
+                >
+                  Git Hub | Home Page
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
 
-            
-            <div class="anime">
-                <h2>- ANIME</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            大学の授業
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2022/12 - 2023/1 (１ヶ月)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            Processing
-                        </td>
-                    </tr>
-                    <!-- <tr>
+        <div class="anime">
+          <h2>- ANIME</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">大学の授業</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/12 - 2023/1 (１ヶ月)</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Processing</td>
+            </tr>
+            <!-- <tr>
                         <td>使用技術</td>
                         <td class="td-second">
 
                         </td>
                     </tr> -->
-                    <!-- <tr>
+            <!-- <tr>
                         <td>使用ツール</td>
                         <td class="td-second">
 
                         </td>
                     </tr> -->
-                    <!-- <tr>
+            <!-- <tr>
                         <td>想定ユーザ</td>
                         <td class="td-second">
                             
                         </td>
                     </tr> -->
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            個人開発
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-                            大学の授業でProcessingを用いてアニメーションを作成した。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-                            テーマは、「自分を表現する」だった。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            紙芝居形式のアニメ
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            次回作るときには一人称や、背景が動くものに挑戦してみたい。
-                            また、編集ソフトにも頼っているところがあったので、そこをプログラムで実装したい。
-                        </td>
-                    </tr>
-                    <!-- <tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                大学の授業でProcessingを用いてアニメーションを作成した。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">テーマは、「自分を表現する」だった。</td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">紙芝居形式のアニメ</td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                次回作るときには一人称や、背景が動くものに挑戦してみたい。
+                また、編集ソフトにも頼っているところがあったので、そこをプログラムで実装したい。
+              </td>
+            </tr>
+            <!-- <tr>
                         <td>システム構成</td>
                         <td><img src="src/line-bot/system.jpg" alt=""></td>
                     </tr> -->
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <video src="src/anime.mp4" controls></video>
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/BuntaMatsushita00/proce_anime">
-                                Git Hub | anime
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <video src="src/anime.mp4" controls></video>
+              </td>
+            </tr>
 
-            <div class="e-seikatsu-2022-intern">
-                <h2>- いい生活様　サマーインターン 2022</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            いい生活株式会社様　サマーインターン
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2022/8/15 - 2022/8/19
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            TypeScript / HTML / CSS
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用技術</td>
-                        <td class="td-second">
-                            vue.js / firebase / vite / Elements Plus
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second">
-                            git lab / slack / figma
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">
-                            田舎から出てくる大学１年生　間宮林蔵君（18歳）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            チーム開発（４名とメンター１名）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-                            テーマ：「いい生活様のAPI とVue.jsを使ってチーム開発 をしよう！」<br>
-                            Vue.jsと賃貸物件データを使ってWebサービスを作る
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>工夫</td>
-                        <td class="td-second">
-                            コンポーネント化を行い保守性を高めた。また、住んでみないと分からないような情報を　在校生レビュー機能で知られるように追加したことや、review_starを使うことで視覚的にわかりやすくしたこと。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            コンポーネント化を行い保守性を高めた。また、住んでみないと分からないような情報を在校生レビュー機能で知られるように追加したことや、review_starを使うことで視覚的にわかりやすくしたこと。
-                            また、最低実装は開発期間内におえられた。しかし、UIが統一できなかった。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            コンフリクトを起こして作業時間をとられた
-                            ブランチ、issueを適切な粒度で作成や、密にコミュニケーションをとり作業範囲を決める
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/intern2022system.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/intern2022.jpg" alt="">
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a href="https://e-seikatsu.snar.jp/index.aspx?id=iPFvuyIr89c">
-                                いい生活様　サマーインターンページ
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="signage">
-                <h2>- Sinage</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">大学の授業</td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">2022/7</td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">Processing</td>
-                    </tr>
-                    <!-- <tr>
-                        <td>使用技術</td>
-                        <td class="td-second"></td>
-                    </tr> -->
-                    <!-- <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second"></td>
-                    </tr> -->
-                    <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">未来大生</td>
-                    </tr>
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">個人開発</td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second"></td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">未来大でのデジタルサイネージ的なのが欲しかったため開発。</td>
-                    </tr>
-                    <tr>
-                        <td>工夫</td>
-                        <td class="td-second">
-                            このアプリはデジタルサイネージのようなものをイメージして自分専用に作成した。これは画面の大きさが変わってもきれいに表示されるようにした。それに加えて、APIを使って天気とニュースが表示されるようにした。いつでも最新の情報になる、かつ、リクエストによるサーバー負荷がかからないようになっている。ニュースは10分に一回、天気は１時間に１回の設定になっている。また、それぞれの画面がリアルタイムで動作するようにした。そのため、画面右下のバスは動いたり、時間によって次のバスが更新されたりするようになっている。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            バスの時刻はjsonファイルを自作しているので、どうにか自動化したい。また、SVGファイルが使えなかった（授業の制約）ので、外部ライブラリをインポートして使いたい。</td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            バスの時刻をjson形式で自動取得する。
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/line-bot/system.jpg" alt=""></td>
-                    </tr> -->
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/signage/img002.jpg" alt="">
-                            <img src="src/signage/img001.jpg" alt="">
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/BuntaMatsushita00/Signage">
-                                Git Hub | Signage
-                            </a>
-                            <br><br>
-                            <a class="portfolio-download" href="download-src/Signage.zip" download="Signage.zip">
-                                Download | Signage.zip
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="ika-quest">
-                <h2>- IKA QUEST</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            大学の授業
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2022/6
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            Processing
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>使用技術</td>
-                        <td class="td-second">
-                        </td>
-                    </tr> -->
-                    <!-- <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <!-- <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            個人開発
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-                            函館はイカの町！ということで、イカが陸地から海に向かうというストーリー。<br>
-                            攻撃を避けながらアイテムを入手して制限時間以内に死なないようにする横スクロールゲーム。<br/>
-                            操作方法：十字キー移動＋スペース等
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <tr>
-                        <td>工夫</td>
-                        <td class="td-second">
-                            ボール（イカ）が自由に動けるようになりました。左右の矢印キーを押下すると、左右に移動できる。また、矢印キー上を押下するとジャンプできる。次に、HPを表示、管理できるようにした。プレイヤー（イカ）のHPは10である。プレイ画面上部に10段階でHPバーを表示する。HPは、毒キノコを食べることで-2、エビを食べることで+1となる。また、プレイ画面左側の赤い範囲に入ると1秒毎にHPが-1となる。最後に、画面遷移ができるようにした。screenNumberという変数の値によって画面遷移を行っている。そのため、draw関数が見やすくなっている。
-                        </td>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            現在は、ランダムにブロックが生成されるようになっているが、これではゲームが詰む可能性があるので、マップを作れるようにしたい。
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/line-bot/system.jpg" alt=""></td>
-                    </tr> -->
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/ikaquest/1.jpg" alt="">
-                            <img src="src/ikaquest/2.jpg" alt="">
-                            <img src="src/ikaquest/3.jpg" alt="">
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/BuntaMatsushita00/processing-game">
-                                Git Hub | IKA QUEST
-                            </a>
-                            <br><br>
-                            <a class="portfolio-download" href="" download="src/ikaquest/ikaquest.zip">
-                                Download | ikaquest.zip
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="wall-paper-changer">
-                <h2>- Wall Paper Changer</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            個人開発
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2022/6 （1週間）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            Python
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用技術</td>
-                        <td class="td-second">
-                            Pillow / Sys
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">
-                            Windowsユーザー
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            個人
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-                            デスクトップの画像にシステム情報を記載する。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-                            自身のデスクトップを充実させるため
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            自分用にはうまくできた。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            軽量化と、OpenCVで作る。また、GUIで表示情報の選択や、パスの指定をできるようにする。
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/line-bot/system.jpg" alt=""></td>
-                    </tr> -->
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/wallpaperchanger/result.jpg" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/Buntamatsushita/wallpaper">
-                                Git Hub | Wall Paper Changer
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="stolenTricolor">
-                <h2>- Stolen Tricolor</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">
-                            いわしジャム
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">
-                            2022/3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">
-                            Python
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>使用技術</td>
-                        <td class="td-second">
-                            pyxel
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <!-- <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">
-
-                        </td>
-                    </tr> -->
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">
-                            チーム開発（４名）
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">
-                            ストーリー：ここは３人の魔女に色を奪われた世界。様々な世界を周り、魔女からの攻撃を避けながら星のカケラを集めて世界に色を取り戻そう！
-                            <br>
-                            ゲームの概要：攻撃を避けながらアイテムを入手してゴールを目指す横スクロールゲーム。
-                            <br>
-                            操作方法：十字キー移動
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">
-                            ジャムテーマ：「魔法」
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">
-                            目標にしていた物は作れた。pyxelのエディターを使いこなすのに手間取った。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            コーディングをほぼ一人で行ったが、煩雑な箇所が目立ったのでそこの改善をしたい。
-                        </td>
-                    </tr>
-                    <!-- <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/line-bot/system.jpg" alt=""></td>
-                    </tr> -->
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/stolentricolor/1.jpg" alt="">
-                            <img src="src/stolentricolor/2.jpg" alt="">
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link" href="https://github.com/Buntamatsushita/pyxelgame">
-                                Git Hub | Stolen Tricolor
-                            </a>
-                            <br><br>
-                            <a class="portfolio-download" href="https://huhfun.itch.io/stolen-tricolor">
-                                itcho.io | Stolen Tricolor
-                            </a>
-                            <br><br>
-                            <a  href="https://itch.io/jam/iwashi-jam-1">
-                                いわしジャム
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="line-bot">
-                <h2>- LINE Bot</h2>
-                <table class="portfolio-table">
-                    <tr>
-                        <th>項目</th>
-                        <th>回答</th>
-                    </tr>
-                    <tr>
-                        <td>開発場所</td>
-                        <td class="td-second">高校の研究活動</td>
-                    </tr>
-                    <tr>
-                        <td>開発期間</td>
-                        <td class="td-second">2020/12～2021/4</td>
-                    </tr>
-                    <tr>
-                        <td>使用言語</td>
-                        <td class="td-second">Python / HTML / CSS</td>
-                    </tr>
-                    <tr>
-                        <td>使用技術</td>
-                        <td class="td-second">LINE Messaging API / apache</td>
-                    </tr>
-                    <tr>
-                        <td>使用ツール</td>
-                        <td class="td-second">AWS EC2 / AWS lambda / AWS API Gateway / AWS S3 / AWS Route53
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>想定ユーザ</td>
-                        <td class="td-second">高校生</td>
-                    </tr>
-                    <tr>
-                        <td>開発規模</td>
-                        <td class="td-second">1人</td>
-                    </tr>
-                    <tr>
-                        <td>概要</td>
-                        <td class="td-second">LINEのメッセージングAPIを用いて、教員と生徒のコミュニケーションを円滑にすることを目的とした。</td>
-                    </tr>
-                    <tr>
-                        <td>目的</td>
-                        <td class="td-second">新型コロナウイルスにより、十分な教育を受けられない状況を改善するとともに教員の労働時間の短縮を目的とした。対象ユーザは高校生を想定。</td>
-                    </tr>
-                    <tr>
-                        <td>結果</td>
-                        <td class="td-second">同時期にLINEのセキュリティ上に問題があったために、学校での運用は許可されなかった。</td>
-                    </tr>
-                    <tr>
-                        <td>課題</td>
-                        <td class="td-second">
-                            画像や動画などの媒体がアップロードできないこと、教員側のUI/UXの工夫が必要であるということがあげられた。また、今回のようなシステム構成よりももっとコンパクトに作れると思うので、システム設計から考え直したいと思った。
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>システム構成</td>
-                        <td><img src="src/line-bot/system.jpg" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>参考資料</td>
-                        <td>
-                            <img src="src/line-bot/show-example.png" alt="">
-                            <img src="src/line-bot/login-view.jpg" alt="">
-                        </td>
-                    <tr>
-                        <td>参考URL</td>
-                        <td class="td-second">
-                            <a class="portfolio-link"
-                                href="https://github.com/Buntamatsushita/LINE_BOT_EDU">Git Hub | LINE Bot
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-
-            </div>
-
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/BuntaMatsushita00/proce_anime"
+                >
+                  Git Hub | anime
+                </a>
+              </td>
+            </tr>
+          </table>
         </div>
 
+        <div class="e-seikatsu-2022-intern">
+          <h2>- いい生活様　サマーインターン 2022</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">いい生活株式会社様　サマーインターン</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/8/15 - 2022/8/19</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">TypeScript / HTML / CSS</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">
+                vue.js / firebase / vite / Elements Plus
+              </td>
+            </tr>
+            <tr>
+              <td>使用ツール</td>
+              <td class="td-second">git lab / slack / figma</td>
+            </tr>
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">
+                田舎から出てくる大学１年生　間宮林蔵君（18歳）
+              </td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">チーム開発（４名とメンター１名）</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second"></td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">
+                テーマ：「いい生活様のAPI とVue.jsを使ってチーム開発
+                をしよう！」<br />
+                Vue.jsと賃貸物件データを使ってWebサービスを作る
+              </td>
+            </tr>
+            <tr>
+              <td>工夫</td>
+              <td class="td-second">
+                コンポーネント化を行い保守性を高めた。また、住んでみないと分からないような情報を　在校生レビュー機能で知られるように追加したことや、review_starを使うことで視覚的にわかりやすくしたこと。
+              </td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                コンポーネント化を行い保守性を高めた。また、住んでみないと分からないような情報を在校生レビュー機能で知られるように追加したことや、review_starを使うことで視覚的にわかりやすくしたこと。
+                また、最低実装は開発期間内におえられた。しかし、UIが統一できなかった。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                コンフリクトを起こして作業時間をとられた
+                ブランチ、issueを適切な粒度で作成や、密にコミュニケーションをとり作業範囲を決める
+              </td>
+            </tr>
+            <tr>
+              <td>システム構成</td>
+              <td><img src="src/intern2022system.png" alt="" /></td>
+            </tr>
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/intern2022.jpg" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a href="https://e-seikatsu.snar.jp/index.aspx?id=iPFvuyIr89c">
+                  いい生活様　サマーインターンページ
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="signage">
+          <h2>- Sinage</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">大学の授業</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/7</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Processing</td>
+            </tr>
+            <!-- <tr>
+                        <td>使用技術</td>
+                        <td class="td-second"></td>
+                    </tr> -->
+            <!-- <tr>
+                        <td>使用ツール</td>
+                        <td class="td-second"></td>
+                    </tr> -->
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">未来大生</td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second"></td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">
+                未来大でのデジタルサイネージ的なのが欲しかったため開発。
+              </td>
+            </tr>
+            <tr>
+              <td>工夫</td>
+              <td class="td-second">
+                このアプリはデジタルサイネージのようなものをイメージして自分専用に作成した。これは画面の大きさが変わってもきれいに表示されるようにした。それに加えて、APIを使って天気とニュースが表示されるようにした。いつでも最新の情報になる、かつ、リクエストによるサーバー負荷がかからないようになっている。ニュースは10分に一回、天気は１時間に１回の設定になっている。また、それぞれの画面がリアルタイムで動作するようにした。そのため、画面右下のバスは動いたり、時間によって次のバスが更新されたりするようになっている。
+              </td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                バスの時刻はjsonファイルを自作しているので、どうにか自動化したい。また、SVGファイルが使えなかった（授業の制約）ので、外部ライブラリをインポートして使いたい。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">バスの時刻をjson形式で自動取得する。</td>
+            </tr>
+            <!-- <tr>
+                        <td>システム構成</td>
+                        <td><img src="src/line-bot/system.jpg" alt=""></td>
+                    </tr> -->
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/signage/img002.jpg" alt="" />
+                <img src="src/signage/img001.jpg" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/BuntaMatsushita00/Signage"
+                >
+                  Git Hub | Signage
+                </a>
+                <br /><br />
+                <a
+                  class="portfolio-download"
+                  href="download-src/Signage.zip"
+                  download="Signage.zip"
+                >
+                  Download | Signage.zip
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="ika-quest">
+          <h2>- IKA QUEST</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">大学の授業</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/6</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Processing</td>
+            </tr>
+            <!-- <tr>
+                        <td>使用技術</td>
+                        <td class="td-second">
+                        </td>
+                    </tr> -->
+            <!-- <tr>
+                        <td>使用ツール</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <!-- <tr>
+                        <td>想定ユーザ</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                函館はイカの町！ということで、イカが陸地から海に向かうというストーリー。<br />
+                攻撃を避けながらアイテムを入手して制限時間以内に死なないようにする横スクロールゲーム。<br />
+                操作方法：十字キー移動＋スペース等
+              </td>
+            </tr>
+            <!-- <tr>
+                        <td>目的</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <tr>
+              <td>工夫</td>
+              <td class="td-second">
+                ボール（イカ）が自由に動けるようになりました。左右の矢印キーを押下すると、左右に移動できる。また、矢印キー上を押下するとジャンプできる。次に、HPを表示、管理できるようにした。プレイヤー（イカ）のHPは10である。プレイ画面上部に10段階でHPバーを表示する。HPは、毒キノコを食べることで-2、エビを食べることで+1となる。また、プレイ画面左側の赤い範囲に入ると1秒毎にHPが-1となる。最後に、画面遷移ができるようにした。screenNumberという変数の値によって画面遷移を行っている。そのため、draw関数が見やすくなっている。
+              </td>
+            </tr>
+
+            <tr>
+              <td>結果</td>
+              <td class="td-second"></td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                現在は、ランダムにブロックが生成されるようになっているが、これではゲームが詰む可能性があるので、マップを作れるようにしたい。
+              </td>
+            </tr>
+            <!-- <tr>
+                        <td>システム構成</td>
+                        <td><img src="src/line-bot/system.jpg" alt=""></td>
+                    </tr> -->
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/ikaquest/1.jpg" alt="" />
+                <img src="src/ikaquest/2.jpg" alt="" />
+                <img src="src/ikaquest/3.jpg" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/BuntaMatsushita00/processing-game"
+                >
+                  Git Hub | IKA QUEST
+                </a>
+                <br /><br />
+                <a
+                  class="portfolio-download"
+                  href=""
+                  download="src/ikaquest/ikaquest.zip"
+                >
+                  Download | ikaquest.zip
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="wall-paper-changer">
+          <h2>- Wall Paper Changer</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">個人開発</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/6 （1週間）</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Python</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">Pillow / Sys</td>
+            </tr>
+            <!-- <tr>
+                        <td>使用ツール</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">Windowsユーザー</td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">個人</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                デスクトップの画像にシステム情報を記載する。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">自身のデスクトップを充実させるため</td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">自分用にはうまくできた。</td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                軽量化と、OpenCVで作る。また、GUIで表示情報の選択や、パスの指定をできるようにする。
+              </td>
+            </tr>
+            <!-- <tr>
+                        <td>システム構成</td>
+                        <td><img src="src/line-bot/system.jpg" alt=""></td>
+                    </tr> -->
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/wallpaperchanger/result.jpg" alt="" />
+              </td>
+            </tr>
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/Buntamatsushita/wallpaper"
+                >
+                  Git Hub | Wall Paper Changer
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="stolenTricolor">
+          <h2>- Stolen Tricolor</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">いわしジャム</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2022/3</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Python</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">pyxel</td>
+            </tr>
+            <!-- <tr>
+                        <td>使用ツール</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <!-- <tr>
+                        <td>想定ユーザ</td>
+                        <td class="td-second">
+
+                        </td>
+                    </tr> -->
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">チーム開発（４名）</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                ストーリー：ここは３人の魔女に色を奪われた世界。様々な世界を周り、魔女からの攻撃を避けながら星のカケラを集めて世界に色を取り戻そう！
+                <br />
+                ゲームの概要：攻撃を避けながらアイテムを入手してゴールを目指す横スクロールゲーム。
+                <br />
+                操作方法：十字キー移動
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">ジャムテーマ：「魔法」</td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                目標にしていた物は作れた。pyxelのエディターを使いこなすのに手間取った。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                コーディングをほぼ一人で行ったが、煩雑な箇所が目立ったのでそこの改善をしたい。
+              </td>
+            </tr>
+            <!-- <tr>
+                        <td>システム構成</td>
+                        <td><img src="src/line-bot/system.jpg" alt=""></td>
+                    </tr> -->
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/stolentricolor/1.jpg" alt="" />
+                <img src="src/stolentricolor/2.jpg" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/Buntamatsushita/pyxelgame"
+                >
+                  Git Hub | Stolen Tricolor
+                </a>
+                <br /><br />
+                <a
+                  class="portfolio-download"
+                  href="https://huhfun.itch.io/stolen-tricolor"
+                >
+                  itcho.io | Stolen Tricolor
+                </a>
+                <br /><br />
+                <a href="https://itch.io/jam/iwashi-jam-1"> いわしジャム </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="line-bot">
+          <h2>- LINE Bot</h2>
+          <table class="portfolio-table">
+            <tr>
+              <th>項目</th>
+              <th>回答</th>
+            </tr>
+            <tr>
+              <td>開発場所</td>
+              <td class="td-second">高校の研究活動</td>
+            </tr>
+            <tr>
+              <td>開発期間</td>
+              <td class="td-second">2020/12～2021/4</td>
+            </tr>
+            <tr>
+              <td>使用言語</td>
+              <td class="td-second">Python / HTML / CSS</td>
+            </tr>
+            <tr>
+              <td>使用技術</td>
+              <td class="td-second">LINE Messaging API / apache</td>
+            </tr>
+            <tr>
+              <td>使用ツール</td>
+              <td class="td-second">
+                AWS EC2 / AWS lambda / AWS API Gateway / AWS S3 / AWS Route53
+              </td>
+            </tr>
+            <tr>
+              <td>想定ユーザ</td>
+              <td class="td-second">高校生</td>
+            </tr>
+            <tr>
+              <td>開発規模</td>
+              <td class="td-second">1人</td>
+            </tr>
+            <tr>
+              <td>概要</td>
+              <td class="td-second">
+                LINEのメッセージングAPIを用いて、教員と生徒のコミュニケーションを円滑にすることを目的とした。
+              </td>
+            </tr>
+            <tr>
+              <td>目的</td>
+              <td class="td-second">
+                新型コロナウイルスにより、十分な教育を受けられない状況を改善するとともに教員の労働時間の短縮を目的とした。対象ユーザは高校生を想定。
+              </td>
+            </tr>
+            <tr>
+              <td>結果</td>
+              <td class="td-second">
+                同時期にLINEのセキュリティ上に問題があったために、学校での運用は許可されなかった。
+              </td>
+            </tr>
+            <tr>
+              <td>課題</td>
+              <td class="td-second">
+                画像や動画などの媒体がアップロードできないこと、教員側のUI/UXの工夫が必要であるということがあげられた。また、今回のようなシステム構成よりももっとコンパクトに作れると思うので、システム設計から考え直したいと思った。
+              </td>
+            </tr>
+            <tr>
+              <td>システム構成</td>
+              <td><img src="src/line-bot/system.jpg" alt="" /></td>
+            </tr>
+            <tr>
+              <td>参考資料</td>
+              <td>
+                <img src="src/line-bot/show-example.png" alt="" />
+                <img src="src/line-bot/login-view.jpg" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td>参考URL</td>
+              <td class="td-second">
+                <a
+                  class="portfolio-link"
+                  href="https://github.com/Buntamatsushita/LINE_BOT_EDU"
+                  >Git Hub | LINE Bot
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </main>
 
     <footer>
-        <div class="copy-right">
-            <p>©buntako 2023 All Rights Reserved.</p>
-        </div>
+      <div class="copy-right">
+        <p>©buntako 2024 All Rights Reserved.</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
